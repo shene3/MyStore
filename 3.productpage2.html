@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ====================================== META DATA ====================================== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLING -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/productpage.css" type="text/css">
+  <!-- FONT-AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+
+  <!-- TITLE -->
+  <title>Watch Mall Product Page</title>
+</head>
+
+<body>
+  <!-- ====================================== NAVBAR ====================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img id="logo" class="img-fluid" src="images/logo.png" alt="clocklogo"> <!-- logo found on Canva mobile app -->
+    <a class="navbar-brand" href="#">Watch Mall</a>
+
+    <!-- mobile view - hamburger button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <!-- HOMEPAGE -->
+        <li class="nav-item">
+          <a class="nav-link" href="1homepage.html">Home</a>
+        </li>
+
+        <!-- CATALOGUE -->
+        <li class="nav-item">
+          <div class="dropdown">
+            <a class="nav-link active" href="2catalogue.html">Catalogue <i class="fa fa-caret-down"></i></a>
+            <!-- Dropdown list -->
+            <div class="dropdown-content">
+              <!-- FOR HIM-->
+              <a class="nav-link" id="catalogue-for-him" href="2catalogue.html#ForHim">FOR HIM</a>
+              <!-- FOR HER -->
+              <a class="nav-link" id="catalogue-for-her" href="2catalogue.html#ForHer">FOR HER</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- CONTACT DETAILS -->
+        <li class="nav-item">
+          <a class="nav-link" href="#bottomfooter">Contact</a>
+        </li>
+
+        <!-- THE COURIER GUY PAGE -->
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.thecourierguy.co.za">The Courier Guy</a>
+        </li>
+
+        <!-- CART -->
+        <li class="cart">
+          <a href="4cart.html">
+            <img src="images/shopping-cart.png" alt="shopping-cart" id="shoppingcartimg" name="basket">
+            <!-- Image found on Canva -->
+            <span>0</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Search" aria-label="search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+  </nav>
+
+  <!-- ====================================== PRODUCT CONTAINER ====================================== -->
+  <h1><span>GA-2200M-1ADR</span></h1>
+
+  <div class="container">
+    <div class="images">
+      <!-- PRODUCT IMAGE -->
+      <img src="images/watch-images/g-shock-one.jpg" id="item-photo">
+    </div>
+
+    <div class="product">
+      <h5>sold by <a href="#">Casio</a> · <small>(687 sales)</small></h5>
+      <h2 class="watchname">Casio G-Shock GA-2200M-1ADR</h2>
+      <!-- PRICE -->
+      <h6 id="price"><small>PRICE</small></h6>
+      <h3>R 3 739</h3>
+      <!-- PRODUCT DESCRIPTION -->
+      <p class="desc">Answer the call to every adventure with this tough watch built with a carbon core guard structure.</p>
+      <!-- BUTTONS -->
+      <div class="buttons">
+        <!-- add to cart -->
+        <button class="AddToCart-button">
+          <a id="0" class="add-cart cart2" href="#">ADD TO CART</a>
+        </button>
+        <!-- wishlist -->
+        <button class="like"><span>♥</span></button>
+      </div>
+    </div>
+
+    <hr>
+    <!-- SPECIFICATIONS DIV -->
+    <div id="specifications">
+      <!-- HEADING -->
+      <h3>SPECIFICATIONS</h3>
+      <!-- FEATURES LIST -->
+      <small>
+        <p>
+            The three-tier construction seamlessly integrates bezel, case back and buttons to slim the case down to a
+            mere 12.4mm. Larger shock-resistant side buttons eliminate the need for button guards, for a more compact
+            timepiece. All this, with zero compromise on ease of use — in fact, it’s even easier.
+            The round bezel with six screw accents projects the rugged toughness demanded on adventures great and small.
+            The inset dial indicator, inspired by an automotive brake disc, is enclosed in a semi-circular ring, both of
+            which are treated in a vapor deposition finish for the metallic look of serious outdoor gear.
+            Crafted separately, the parts and dial are then assembled to add dynamic dimensionality to the watch face.
+            The digital display runs diagonally between the 4 and 6 o’clock positions for a final touch of outright
+            boldness.</i>
+        </p>
+        <ul class="specification-list">
+          <li>Case / bezel material: Resin</li>
+            <li>Resin Band</li>
+            <li>Mineral Glass</li>
+            <li>Neobrite</li>
+            <li>Shock Resistant</li>
+            <li>Carbon Core Guard structure</li>
+            <li>200-meter water resistance</li>
+            <li>Double LED light</li>
+            <li>World time</li>
+            <li>1/100-second stopwatch</li>
+            <li>Countdown timer</li>
+            <li>5 daily alarms</li>
+            <li>Hourly time signal</li>
+            <li>Hand shift feature <i>(Hands move out of the way to provide an unobstructed view of digital display
+                contents.)</i></li>
+            <li>Full auto-calendar (to year 2099)</li>
+            <li>12/24-hour format</li>
+            <li>Button operation tone on/off</li>
+            <li>Regular timekeeping</li>
+            <li>Accuracy: ±15 seconds per month</li>
+            <li>Approx. battery life: 3 years on SR726W × 2</li>
+            <li>Size of case : 50.8×47.1×12.8mm</li>
+            <li>Total weight : 57g</li>
+        </ul>
+      </small>
+    </div>
+
+  </div> <!-- container ends -->
+
+  <!-- ====================================== FOOTER: Get in touch ====================================== -->
+  <footer id="bottomfooter">
+    <h2>Get in touch</h2>
+    <p>E-mail address: <a href="mailto:info@watchmall.co.za">info@watchmall.co.za</a></p>
+    <p>Phone: 066 264 0806</p>
+    <br>
+    <p> &copy; Watch Mall.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by Shene Miller</p>
+  </footer>
+</body>
+<!-- ====================================== JAVASCRIPT ====================================== -->
+<script src="script/script.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</html>

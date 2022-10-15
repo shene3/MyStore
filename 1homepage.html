@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ====================================== META DATA ====================================== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLING -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <!-- FONT-AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+
+  <!-- TITLE -->
+  <title>Watch Mall Home</title>
+</head>
+
+<!-- I got permission from my boss to use our existing online store data to complete this task. Checkout https://watchmall.co.za Will be using images, desciptions and prices from this site -->
+
+<body>
+  <!-- ====================================== NAVBAR ====================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img id="logo" class="img-fluid" src="images/logo.png" alt="clocklogo"> <!-- logo found on Canva mobile app -->
+    <!-- LOGO -->
+    <a class="navbar-brand" href="#">Watch Mall</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <!-- HOME PAGE -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home </a>
+        </li>
+
+        <!-- CATALOGUE -->
+        <li class="nav-item">
+          <div class="dropdown">
+            <a class="nav-link" href="2catalogue.html">Catalogue <i class="fa fa-caret-down"></i></a>
+            <!-- Dropdown list -->
+            <div class="dropdown-content">
+              <!-- FOR HIM-->
+              <a class="nav-link" id="catalogue-for-him" href="2catalogue.html#ForHim">FOR HIM</a>
+              <!-- FOR HER -->
+              <a class="nav-link" id="catalogue-for-her" href="2catalogue.html#ForHer">FOR HER</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- CONTACT DETAILS -->
+        <li class="nav-item">
+          <a class="nav-link" href="#bottomfooter">Contact</a>
+        </li>
+
+        <!-- THE COURIER GUY PAGE -->
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.thecourierguy.co.za">The Courier Guy</a>
+        </li>
+
+        <!-- CART -->
+        <li class="cart">
+          <a href="4cart.html">
+            <img src="images/shopping-cart.png" alt="shopping-cart" id="shoppingcartimg" name="basket"><!-- Image found on Canva -->
+            <span>0</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Search" aria-label="search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+  </nav>
+
+  <!-- ====================================== TOP GRID / INTRODUCTION ====================================== -->
+  <div id="container">
+    <header>
+      <h1>Welcome to <b style="font-family: serif;"> Watch Mall</b></h1>
+    </header>
+    <section>
+      <p id="section-paragraph"><b style="font-family: serif;">Watch Mall</b> is a registered online e-tailor for luxury
+        watches. We ensure
+        that you receive quality, genuine
+        timepieces at the most affordable price guaranteed, shipped directly from the distributor warehouses to your
+        door.</p>
+    </section> <!-- Info obtained from Watch Mall facebook page https://www.facebook.com/watchmall.co.za/ -->
+    <aside>
+      <img src="images/logo.png" class="img-thumbnail rounded" id="aside-logo" alt="MyLogo">
+    </aside>
+    <!-- img-fluid makes images responsive when using bootstrap. Responsive image means that the image will automatically adjust according to the screen size of the device used. -->
+    <footer>
+      <p id="footer-paragraph"> <small>Where you have all the time in the world to shop!</small> </p>
+    </footer>
+  </div>
+
+  <!-- ====================================== NOTE ====================================== -->
+  <div class="navigation-notes1">
+    <i class="fas fa-exclamation-circle" ></i>  <p id="navigation-note"><b>NOTE: </b>The below images are clickable</p>
+  </div>
+
+  <!-- ====================================== CHOOSE SECTION FOR HIM / FOR HER ====================================== -->
+  <div id="choose">
+    <a href="2catalogue.html#ForHim"> <img src="images/forhim.png" alt="ForHim" id="chooseimg1" class="zoom"> </a>
+    <a href="2catalogue.html#ForHer"> <img src="images/forher.jpg" alt="ForHer" id="chooseimg2" class="zoom"> </a>
+  </div>
+
+  <!-- ====================================== TESTIMONIALS ====================================== -->
+  <h2 id="testimonial-heading">TESTIMONIALS</h2>
+  <!-- TESTIMONIAL 1 -->
+  <div id="testimonials">
+    <article class="testimonial">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+        class="fas fa-star"></i>
+      <p><i>Great service! Fast Delivery!</i></p>
+      <h3>Marie Olsen</h3>
+      <p>I ordered a watch for my daughter for her birthday, I was concerned that it might not arrive in time, as her
+        birthday was in 5 days. I received fantastic service from Shene, she helped me pick out the best size watch for
+        my
+        7-year old and we got the parcel in no time, 2 days after placing my order. My daughter is very happy! Thanks a
+        ton!</p>
+    </article>
+    <!-- TESTIMONIAL 2 -->
+    <article class="testimonial">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+        class="fas fa-star"></i>
+      <p><i>Excellent products, fast delivery, great communication!</i></p>
+      <h3>Lez</h3>
+      <p>Completely legit! I was a bit sceptical buying online as there are so many fraudsters, i took a chance with
+        Watch
+        Mall and bought a Casio G-Steel... I couldn't be happier. The product is original, the comms was fast and the
+        delivery also so. Thank you Watch Mall!</p>
+    </article>
+    <!-- TESTIMONIAL 3 -->
+    <article class="testimonial">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+        class="fas fa-star"></i>
+      <p><i>Just Wow!</i></p>
+      <h3>Jean DT</h3>
+      <p>I did not expect to receive my parcel so quickly! The communication was awesome they keep you updated every
+        step
+        of the way. Also, awesome catalogue! wide range to choose from it took a while to choose "the one"</p>
+    </article>
+  </div>
+  <br><br>
+  <!-- ====================================== FORM: DISCOUNTS ====================================== -->
+  <form id="form-end">
+    <h2>Be the first to know about major discounts!</h2>
+    <br>
+    <!-- enter e-mail -->
+    <div class="form-group row">
+      <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+      <div class="col-sm-10">
+        <small id="discount-info" class="form-text text-muted">We'll never share your e-mail with anyone else.</small>
+      </div>
+    </div>
+    <!-- enter password -->
+    <div class="form-group row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+    </div>
+
+    <!-- CHECKBOX -->
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <fieldset class="form-group">
+          <legend class="col-form-label col-sm-2 pt-0"></legend>
+          <div class="row">
+            <div class="col-sm-10">
+              <!-- radio button 1 -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  I want to get updates on Watch Mall events too.
+                </label>
+              </div>
+              <!-- radio button 2 -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  I just want to know about discounts.
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <!-- submit button -->
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary" id="submitbutton">Submit</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- ====================================== FOOTER: Get in touch ====================================== -->
+  <footer id="bottomfooter">
+    <h2>Get in touch</h2>
+    <p>E-mail address: <a href="mailto:info@watchmall.co.za">info@watchmall.co.za</a></p>
+    <p>Phone: 066 264 0806</p>
+    <br>
+    <p> &copy; Watch Mall.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by Shene Miller</p>
+    <p>Last updated: 25 Feb 2022</p>
+  </footer>
+
+  <!-- ====================================== SCRIPT ====================================== -->
+  <script src="script/script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

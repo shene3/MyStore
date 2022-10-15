@@ -1,0 +1,386 @@
+body {
+    background-color: #096653; /* this is the background color the animation starts with, but I don't want it to stay this color after animation, so the below is applied */ 
+}
+body {
+    background-color: #39ebc7; /* this is what the background color will remain after the animation. */ 
+    animation-name: mymove;
+    animation-duration: 6s;
+}
+@keyframes mymove {
+    from {background-color: #096653}
+    to {background-color: #39ebc7}
+}
+
+/* ====================================== STORE NOTICE ====================================== */
+.store-notice {
+    width: 100%;
+    text-align: center;
+}
+
+.HS-btns {
+    margin-left: 50%;
+    padding-bottom: 25px;
+}
+
+#notice-box {
+    background-color: #43484D;
+    color: #ddd;
+}
+
+/* ====================================== NAVBAR EDITING ====================================== */
+/* Catalogue Dropdown */
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    padding-top: 8.7px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 1%;
+}
+
+#catalogue-for-him {
+    color: slategray;
+    font-weight: bold;
+}
+
+#catalogue-for-her {
+    color: slategray;
+    font-weight: bold;
+}
+
+/* Catalogue Dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+    background-color: #ddd;
+}
+
+#catalogue-for-him:hover {
+    color: #43484D;
+    font-weight: normal;
+}
+
+#catalogue-for-her:hover {
+    color: #43484D;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* brand name */
+.navbar-brand {
+    font-family: serif;
+    font-size: xx-large;
+}
+/* cart icon in navbar */
+#shoppingcartimg {
+    height: 30px;
+    width: 30px;
+}
+#shoppingcartimg:hover {
+    opacity: 60%;
+}
+
+/* LOGO */
+#logo {
+    margin: 1%;
+    height: 60px;
+    width: 60px;
+}
+
+/* ====================================== INFO FORM ====================================== */
+#form-end {
+    border: 1px solid aliceblue;
+    border-radius: 3%;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+#discount-info { /* "We'll never share your e-mail with anyone else." */
+    margin-left: 21%;
+    width: 70%;
+}
+#inputEmail {
+    width: 70%;
+}
+#inputPassword {
+    width: 70%;
+}
+
+/* ====================================== FOOTER ====================================== */
+#bottomfooter {
+    background-color: slategray;
+    height: max-content;
+}
+
+#bottomfooter p a {
+    color: white;
+}
+
+/* ====================================== HOMEPAGE STYLING ====================================== */
+.zoom {
+    transition: transform .2s
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+/* NAVIGATION NOTE DIV */
+.navigation-notes1 {
+    text-align: center;
+    background-color: gray;
+    width: 400px;
+    margin-left: 40%;
+    box-shadow: 2px 2px 2px black;
+}
+.navigation-notes1 i {
+    padding: 2%;
+    height: 25px;
+    width: 25px;
+    color: maroon;
+    padding-top: 5%;
+}
+
+#navigation-note {
+    display: inline-block;
+    color: white;
+}
+#navigation-note b {
+    color: maroon;
+}
+
+/* CHOOSE MALE/FEMALE */
+#chooseimg1,
+#chooseimg2 {
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 2%;
+}
+
+#choose {
+    text-align: center;
+}
+
+#choose img:hover {
+    opacity: 50%;
+}
+
+/* TESTIMONIALS */
+#testimonial-heading {
+    background-color: grey;
+    color: white;
+    border: 2px solid grey;
+    width: 30%;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 3px 3px 3px black;
+}
+.testimonial {
+    display: inline-table;
+    background-color: #D1F2EB;
+    height: 360px;
+    margin: 2%;
+    padding: 1%;
+}
+#testimonials {
+    padding-left: 15%;
+}
+
+/* GRID at beginning of Home Page */
+#container {
+    display: grid;
+    width: 80%;
+    margin: auto;
+}
+#section-paragraph {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+#footer-paragraph {
+    font-size: 30px;
+    font-family: 'Brush Script MT';
+}
+
+header {
+    grid-column: 1/13;
+    grid-row: 1;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+section {
+    grid-column: 1/9;
+    grid-row: 2;
+}
+
+aside {
+    grid-column: 9/13;
+    grid-row: 2;
+    padding: 2px;
+    background-color: aliceblue;
+}
+#aside-logo {
+    width: 150px;
+    height: 120px;
+}
+
+footer {
+    grid-column: 1/13;
+    grid-row: 3;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+    height: 80px;
+}
+
+section p {
+    margin-top: 2.5%;
+}
+
+/* ====================================== CATALOGUE PAGE STYLING ====================================== */
+/* NAVIGATION NOTE DIV */
+.navigation-notes2 {
+    text-align: center;
+    background-color: gray;
+    width: 500px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    box-shadow: 2px 2px 2px black;
+}
+.navigation-notes2 i {
+    padding: 2%;
+    height: 25px;
+    width: 25px;
+    color: maroon;
+    padding-top: 5%;
+}
+
+/* INTRO */
+#catalogueintro {
+    text-align: center;
+    margin: 5%;
+}
+
+#catalogueheading {
+    text-shadow: black 1px 2px 2px;
+    font-size: 80px;
+    color: #43484D;
+}
+
+#catalogueintro h3 {
+    text-align: left;
+}
+
+#catalogueintro p {
+    text-align: left;
+}
+
+#catalogueintro p b i {
+    color: maroon;
+}
+
+/* SECTION HEADING */
+.section-heading {
+    background-color: grey;
+    color: white;
+    border: 2px solid grey;
+    width: 30%;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 3px 3px 3px black;
+}
+
+/* PRODUCT CARDS */
+.product-card {
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 1%;
+}
+
+/* ARTICLES */
+article {
+    border: 2px solid grey;
+    border-radius: 3%;
+    box-shadow: 5px 5px slategrey;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+}
+.articles:hover {
+    background-color: #39ebc7;
+}
+/* watch images in articles */
+img {
+    width: 70%;
+    height: 300px;
+}
+.articles a img:hover {
+    opacity: 85%;
+    border: 2px solid red;
+}
+/* watch titles */
+article h5{
+    font-family: Georgia, serif;
+    text-shadow: 2px 2px 2px red;
+}
+/* watch prices */
+.articles p {
+    padding: 10px;
+    font-family:'Buda';font-size: 22px;
+    text-shadow: 2px 2px 2px red;
+}
+
+/* SHOPPING CART */
+/* quick add to cart */
+.add-cart {
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.add-cart:hover {
+    color: white;
+}
+
+article:hover .cart1,
+article:hover .cart2,
+article:hover .cart3,
+article:hover .cart4,
+article:hover .cart5,
+article:hover .cart6,
+article:hover .cart7,
+article:hover .cart8,
+article:hover .cart9,
+article:hover .cart10,
+article:hover .cart11,
+article:hover .cart12{
+    opacity: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 118px;
+    padding-right: 118px;
+    text-decoration: none;
+    border-radius: 3%;
+}

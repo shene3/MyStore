@@ -1,0 +1,183 @@
+/* ====================================== PAGE ====================================== */
+html {
+    display: grid;
+    min-height: 100%;
+}
+
+body {
+    display: grid;
+}
+
+/* ====================================== NAVBAR EDITING ====================================== */
+/* Catalogue Dropdown */
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    padding-top: 8.7px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 1%;
+}
+
+#catalogue-for-him {
+    color: slategray;
+    font-weight: bold;
+}
+
+#catalogue-for-her {
+    color: slategray;
+    font-weight: bold;
+}
+
+/* Catalogue Dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+    background-color: #ddd;
+}
+
+#catalogue-for-him:hover {
+    color: #43484D;
+    font-weight: normal;
+}
+
+#catalogue-for-her:hover {
+    color: #43484D;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* brand name */
+.navbar-brand {
+    font-family: serif;
+    font-size: xx-large;
+}
+/* cart icon in navbar */
+#shoppingcartimg {
+    height: 30px;
+    width: 30px;
+}
+#shoppingcartimg:hover {
+    opacity: 60%;
+}
+
+/* LOGO */
+#logo {
+    margin: 1%;
+    height: 90px;
+    width: 115px;
+}
+
+/* ====================================== FOOTER ====================================== */
+#bottomfooter {
+    background-color: slategray;
+    height: max-content;
+    text-align: center;}
+
+#bottomfooter p a {
+    color: white;}
+
+/* ====================================== PRODUCT HEADING ====================================== */
+h1 span{
+    background-color: grey;
+    color: white;
+    border: 2px solid grey;
+    font-size: 50px;
+    box-shadow: 3px 3px 3px black;
+}
+
+/* ====================================== PRODUCT CONTAINER ====================================== */
+.container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 520px;
+    box-shadow: 5px 5px 15px rgba(aqua, .5);
+    border-radius: 10px;
+}
+
+.desc {
+    font-size: 0.6rem;
+    color: #43484D;
+    letter-spacing: 1px;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 17px;
+    font-size: .7em;
+    line-height: 1.6em;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+h5 {
+    font-size: 0.6em;
+    letter-spacing: 1px;
+}
+
+.watchname {
+    font-size: 1.2rem;
+    margin-top: -5px;
+}
+
+h3 {
+    margin-top: -5px;
+}
+
+.images img {
+    width: 290px;
+    margin-top: 47px;
+}
+
+.product {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 47px;
+    left: 60%;
+}
+
+button {
+    padding: 10px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.add-cart {
+    color: #43484D;
+    font-weight: 400;
+}
+.add-cart:hover{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.AddToCart-button:hover{
+    background: #39ebc7;
+    border: 2px solid #43484D;
+}
+
+.like {
+    background-color: white;
+    color: rgba(226, 7, 7, 0.894);
+}
+.like:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+button:focus {outline:0;}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ====================================== META DATA ====================================== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- CSS -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/cart.css">
+  <!-- FONT-AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+
+  <!-- TITLE -->
+  <title>Watch Mall Cart</title>
+</head>
+
+<body onload="displayCart()">
+  <!-- SCRIPT AJAX -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- ====================================== NAVBAR ====================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img id="logo" class="img-fluid" src="images/logo.png" alt="clocklogo"> <!-- logo found on Canva mobile app -->
+    <a class="navbar-brand" href="#">Watch Mall</a>
+    <!-- mobile view - hamburger button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <!-- HOMEPAGE -->
+        <li class="nav-item">
+          <a class="nav-link" href="1homepage.html">Home</a>
+        </li>
+
+        <!-- CATALOGUE -->
+        <li class="nav-item">
+          <div class="dropdown">
+            <a class="nav-link" href="2catalogue.html">Catalogue <i class="fa fa-caret-down"></i></a>
+            <!-- Dropdown list -->
+            <div class="dropdown-content">
+              <!-- FOR HIM-->
+              <a class="nav-link" id="catalogue-for-him" href="2catalogue.html#ForHim">FOR HIM</a>
+              <!-- FOR HER -->
+              <a class="nav-link" id="catalogue-for-her" href="2catalogue.html#ForHer">FOR HER</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- CONTACT DETAILS -->
+        <li class="nav-item">
+          <a class="nav-link" href="#bottomfooter">Contact</a>
+        </li>
+
+        <!-- THE COURIER GUY PAGE -->
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.thecourierguy.co.za">The Courier Guy</a>
+        </li>
+       
+        <!-- CART -->
+        <li class="cart">
+          <a href="4cart.html">
+            <img src="images/shopping-cart.png" alt="shopping-cart" id="shoppingcartimg" name="basket"> <!-- Image found on Canva -->
+            <span>0</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Search" aria-label="search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+  </nav>
+
+  <!-- ====================================== SHOPPING CART ====================================== -->
+  <h1>Shopping cart</h1>
+
+  <div class="products-container">
+    <div class="product-header">
+      <h5 class="product-title">PRODUCT</h5>
+      <h5 class="price">PRICE</h5>
+      <h5 class="quantity">QUANTITY</h5>
+      <h5 class="total">TOTAL()</h5>
+    </div>
+    <div class="products">
+    </div>
+  </div>
+
+  <div id="space"></div>
+  <!-- ====================================== DELIVERY OPTION ====================================== -->
+  <!-- Radio Buttons -->
+  <h3 class="center">Select Option:</h3>
+  <div class="center">
+    <input class="radio-buttons" id="deliveryButton" type="radio" name="rad1" onclick="deliveryForm(0)" value="R 100" checked>Delivery
+    <input class="radio-buttons" type="radio" name="rad1" onclick="deliveryForm(1)">Collection
+  </div>
+  <br>
+
+  <!-- Delivery Form -->
+  <div id="deliveryForm" class="deliveryForm">
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SUBMIT button-->
+          <p>
+            <button class="btn btn-secondary" id="submit-btn" type="button" onclick="shippingValue(100)">SUBMIT</button>
+          </p>
+        </form>
+      </div>
+    </div>      
+  </div>
+  </div>
+
+	<table id="updateTotal">
+    <!-- ====================================== SHIPPING TOTAL ====================================== -->
+	  <tr>
+      <td><h3>Shipping</h3></td>
+      <td><p><input type="text" id="pressed" value="" class="shipping input"/></p></td>
+      <td><h3>ZAR</h3></td>
+	  </tr>
+    <!-- ====================================== VAT ====================================== -->
+	  <tr>
+      <td><h3>VAT</h3></td>
+	  	<td><input type="text" class="vat input" value="2"></td>
+      <td><h3>ZAR</h3></td>
+	  </tr>
+    <!-- ====================================== GRAND TOTAL ====================================== -->
+	  <tr>
+      <td><h3><strong>Grand Total</strong></h3></td>
+	  	<td><strong><input type="text" class="grandTotal input"></strong></td>
+      <td><h3><strong>ZAR</strong></h3></td>
+	  </tr>
+	</table>
+
+  <!-- ====================================== DISCOUNT COUPON FORM ====================================== -->
+  <div class="discount-coupon">
+    <p>Apply your coupon here!</p>
+    <br>
+    <input type="text" id="promo-code">
+    <br>
+
+    <!-- Enter button-->
+    <button id="enter-btn">ENTER</button>
+  </div>
+
+  
+  <!-- ====================================== CHECKOUT BUTTON ====================================== -->
+  <button type="submit" class="btn btn-secondary" id="checkoutbutton">Checkout</button>
+  <br>
+
+  
+
+  <!-- ====================================== SIGN UP FORM ====================================== -->
+  <form id="form-end">
+    <h2>Be the first to know about major discounts!</h2>
+    <br>
+    <!-- E-MAIL -->
+    <div class="form-group row">
+      <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+      <!-- enter email -->
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+      <div class="col-sm-10">
+        <small id="discount-info" class="form-text text-muted">We'll never share your e-mail with anyone else.</small>
+      </div>
+    </div>
+    <!-- PASSWORD -->
+    <div class="form-group row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <!-- enter password -->
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+    </div>
+    <!-- CHECKBOX -->
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <fieldset class="form-group">
+          <legend class="col-form-label col-sm-2 pt-0"></legend>
+          <div class="row">
+            <div class="col-sm-10">
+              <!-- check option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  I want to get updates on Watch Mall events too.
+                </label>
+              </div>
+              <!-- check option -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  I just want to know about discounts.
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <!-- SUBMIT BUTTON -->
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary" id="submitbutton">Submit</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- ====================================== FOOTER: Get in touch ====================================== -->
+  </form>
+  <div class="footer">
+    <footer id="bottomfooter">
+      <h2>Get in touch</h2>
+      <!-- e-mail -->
+      <p>E-mail address: <a href="mailto:info@watchmall.co.za" target="_blank"
+          rel="noopener noreferrer">info@watchmall.co.za</a></p>
+      <!-- phone -->
+      <p>Phone: 083 641 4752</p>
+      <br>
+      <p> &copy; Watch Mall.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by Shene Miller</p>
+    </footer>
+  </div>
+
+  <!-- ====================================== SCRIPT ====================================== -->
+  <script src="script/script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

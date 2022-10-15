@@ -1,0 +1,321 @@
+body {
+    background-color: #39ebc7;
+}
+
+/* ====================================== NAVBAR EDITING ====================================== */
+/* Catalogue Dropdown */
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    padding-top: 8.7px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 1%;
+}
+
+#catalogue-for-him {
+    color: slategray;
+    font-weight: bold;
+}
+
+#catalogue-for-her {
+    color: slategray;
+    font-weight: bold;
+}
+
+/* Catalogue Dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+    background-color: #ddd;
+}
+
+#catalogue-for-him:hover {
+    color: #43484D;
+    font-weight: normal;
+}
+
+#catalogue-for-her:hover {
+    color: #43484D;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* brand name */
+.navbar-brand {
+    font-family: serif;
+    font-size: xx-large;
+}
+/* cart icon in navbar */
+#shoppingcartimg {
+    height: 30px;
+    width: 30px;
+}
+#shoppingcartimg:hover {
+    opacity: 60%;
+}
+
+/* LOGO */
+#logo {
+    margin: 1%;
+    height: 60px;
+    width: 60px;
+}
+
+/* ====================================== FOOTER ====================================== */
+#bottomfooter {
+    background-color: slategray;
+    height: 200px;
+    text-align: center;
+}
+
+#bottomfooter p a {
+    color: white;
+}
+
+/* ====================================== HEADING STYLING ====================================== */
+h1 {
+    color: white;
+    text-align: center;
+    background-color: #43484D;
+}
+
+/* ====================================== SHOPPING CART ====================================== */
+
+.products-container {
+    max-width: 900px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    max-width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 60%;
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon {
+    cursor: pointer;   
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    
+    width: 100%;
+    padding: 10px 0;
+}
+
+#vatIncl {
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+}
+
+.R {
+    display: flex;
+    justify-content: end;
+    margin-right: 15%;
+    justify-content: end;
+    margin-top: -4%;
+}
+
+.totals {
+    display: flex;
+    justify-content: end;
+    margin-top: -4%;
+}
+
+/* ====================================== DELIVERY FORM ====================================== */
+.center{
+    text-align: center;
+}
+
+.row {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* DELIVERY DROPDOWN */
+.dropbtn{
+    width: 100%;
+    font-weight: bold;
+}
+
+option {
+    display: block;
+    width: 100%;
+    color: black;
+    padding: 12px 16px;
+    text-align: center;
+}
+option:hover{
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* ====================================== DISCOUNT COUPON ====================================== */
+.discount-coupon {
+    text-align: center;
+    border: 20px solid;
+    border-radius: 10%;
+    border-image: linear-gradient(blue, #9f240c) 30;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5%;
+    padding: 60px;
+    background-color: #43484D;
+    color: #ddd;
+}
+
+#apply-btn {
+    padding: 5px;
+    background-color: #9f240c;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+#coupon-code {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+/* ====================================== CHECKOUT BUTTON ====================================== */
+#checkoutbutton {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    box-shadow: black 2px 2px 2px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#checkoutbutton:active {  /* adding 'click' effect */
+    box-shadow: 0 0 0 black, inset 4px 4px 4px black;
+    transform: translate(6px, 6px);
+}
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other (and change the direction 
+- make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+  

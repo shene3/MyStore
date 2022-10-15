@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ====================================== META DATA ====================================== -->
+    <meta charset="UTF-8" x />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLING -->
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- FONT-AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <!-- TITLE-->
+    <title>Watch Mall Catalogue</title>
+  </head>
+
+  <!-- I got permission from my boss to use our existing online store data to complete this task. Checkout https://watchmall.co.za -->
+
+  <body>
+    <!-- ====================================== NAVBAR ====================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- logo -->
+      <img id="logo" class="img-fluid" src="images/logo.png" alt="clocklogo" />
+      <!-- logo found on Canva mobile app -->
+      <!-- brand name -->
+      <a class="navbar-brand" href="#">Watch Mall</a>
+      <!-- hamburger - for mobile -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <!-- HOME -->
+          <li class="nav-item">
+            <a class="nav-link" href="1homepage.html">Home</a>
+          </li>
+
+          <!-- CATALOGUE -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link active" href="2catalogue.html"
+                >Catalogue <i class="fa fa-caret-down"></i
+              ></a>
+              <!-- Dropdown list -->
+              <div class="dropdown-content">
+                <!-- FOR HIM-->
+                <a
+                  class="nav-link"
+                  id="catalogue-for-him"
+                  href="2catalogue.html#ForHim"
+                  >FOR HIM</a
+                >
+                <!-- FOR HER -->
+                <a
+                  class="nav-link"
+                  id="catalogue-for-her"
+                  href="2catalogue.html#ForHer"
+                  >FOR HER</a
+                >
+              </div>
+            </div>
+          </li>
+
+          <!-- CONTACT -->
+          <li class="nav-item">
+            <a class="nav-link" href="#bottomfooter">Contact</a>
+          </li>
+
+          <!-- COURIER GUY -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.thecourierguy.co.za"
+              >The Courier Guy</a
+            >
+          </li>
+
+          <!-- CART -->
+          <li class="cart">
+            <a href="4cart.html">
+              <img
+                src="images/shopping-cart.png"
+                alt="shopping-cart"
+                id="shoppingcartimg"
+                name="basket"
+              />
+              <!-- Image found on Canva -->
+              <span>0</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- SEARCH BAR -->
+      </div>
+      <form class="form-inline">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Search"
+          aria-label="search"
+        />
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <!-- ====================================== INTRO ====================================== -->
+    <div id="catalogueintro">
+      <h1 id="catalogueheading">Catalogue</h1>
+      <br />
+      <h3>Why should you buy from us?</h3>
+      <br />
+      <p>
+        <b>Secure</b> | Your purchase on our site is secure and that all steps
+        have been taken to ensure that you have a smooth and pleasant experience
+        while shopping with WatchMall.
+      </p>
+      <p>
+        <b>Payments</b> | We offer EFT payment options as well as online credit
+        card transactions via Payfast.
+      </p>
+      <p>
+        <b>Quick Delivery</b> | The watches are shipped directly from the
+        distributor warehouses
+      </p>
+      <p>
+        <b>Genuine</b> | All our Casio products are 100% authentic and original
+      </p>
+      <p><b>Love</b> | We absolutely love what we do!!</p>
+      <br />
+      <p>
+        <b><i>Thanks for visiting our store!</i></b>
+      </p>
+    </div>
+
+    <!-- ====================================== NOTE ====================================== -->
+    <div class="navigation-notes2">
+      <i class="fas fa-exclamation-circle"></i>
+      <p id="navigation-note">
+        <b>NOTE: </b>Click on the below images for more product info
+      </p>
+    </div>
+
+    <!-- ====================================== CATALOGUE SECTION ====================================== 
+      images and descriptions for this section obtianed from https://watchmall.co.za , descriptions have been adjusted -->
+    <!-- ===*** FOR HIM SECTION ***=== -->
+    <h2 class="section-heading" id="ForHim">FOR HIM</h2>
+
+    <!-- PRODUCT ARTICLES -->
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage1.html">
+          <img
+            src="images/watch-images/g-steel.jpg"
+            alt="GST-B400BD-1A2DR"
+            class="img-thumbnail"
+          />
+          <!-- class="img-thumbnail" this makes images thumbnails, which are images with a rounded border appearance. -->
+        </a>
+        <h2>Casio G-Shock G-Steel</h2>
+        <h5>GST-B400BD-1A2DR</h5>
+        <p>R 13 599</p>
+        <!-- quick add to cart -->
+        <a id="0" class="add-cart cart1" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage2.html">
+          <img
+            src="images/watch-images/g-shock-one.jpg"
+            alt="GA-2200M-1ADR"
+            class="img-thumbnail"
+          />
+        </a>
+        <h2>Casio G-Shock</h2>
+        <h5>GA-2200M-1ADR</h5>
+        <p>R 3 739</p>
+        <!-- quick add to cart -->
+        <a id="1" class="add-cart cart2" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage3.html">
+          <img
+            src="images/watch-images/protrek.jpg"
+            alt="PRG-30-5DR"
+            class="img-thumbnail"
+          />
+        </a>
+        <h2>Casio ProTrek</h2>
+        <h5>PRG-30-5DR</h5>
+        <p>R 6 499</p>
+        <!-- quick add to cart -->
+        <a id="2" id="button-2" class="add-cart cart3" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage4.html">
+          <img
+            src="images/watch-images/edifice.jpg"
+            alt="EFV-100L-1AVUDF"
+            class="img-thumbnail"
+          />
+        </a>
+        <h2>Casio Edifice</h2>
+        <h5>EFV-100L-1AVUDF</h5>
+        <p>R 2 999</p>
+        <!-- quick add to cart -->
+        <a id="3" class="add-cart cart4" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 5 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage5.html">
+          <img
+            src="images/watch-images/multihands.jpg"
+            alt="MTP-VD300SG-1EUDF"
+            class="img-thumbnail"
+          />
+        </a>
+        <h2>Casio Multi-Hands</h2>
+        <h5>MTP-VD300SG-1EUDF</h5>
+        <p>R 1 899</p>
+        <!-- quick add to cart -->
+        <a id="4" class="add-cart cart5" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 6 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage6.html">
+          <img
+            src="images/watch-images/vintage-silver.jpg"
+            alt="A500WA-7DF"
+            class="img-thumbnail"
+          />
+        </a>
+        <h2>Casio Vintage</h2>
+        <h5>A500WA-7DF</h5>
+        <p>R 1 299</p>
+        <!-- quick add to cart -->
+        <a id="5" class="add-cart cart6" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- ===*** FOR HER SECTION ***=== -->
+    <h2 class="section-heading" id="ForHer">FOR HER</h2>
+
+    <!-- PRODUCT ARTICLES -->
+    <!-- PRODUCT 7 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage7.html">
+          <img
+            src="images/watch-images/g-shock-two.jpg"
+            alt="GM-S5600SK-7DR"
+            class="img-thumbnail rounded-circle"
+          />
+        </a>
+        <h2>Casio G-Shock</h2>
+        <h5>GM-S5600SK-7DR</h5>
+        <p>R 5 699</p>
+        <!-- quick add to cart -->
+        <a id="6" class="add-cart cart7" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 8 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage8.html">
+          <img
+            src="images/watch-images/sheen-one.jpg"
+            alt="SHE-4056BD-1AUDF"
+            class="img-thumbnail rounded-circle"
+          />
+        </a>
+        <h2>Casio Sheen</h2>
+        <h5>SHE-4056BD-1AUDF</h5>
+        <p>R 4 299</p>
+        <!-- quick add to cart -->
+        <a id="7" class="add-cart cart8" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 9 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage9.html">
+          <img
+            src="images/watch-images/baby-g-one.jpg"
+            alt="BA-130CV-4ADR"
+            class="img-thumbnail rounded-circle"
+          />
+        </a>
+        <h2>Casio Baby-G</h2>
+        <h5>BA-130CV-4ADR</h5>
+        <p>R 3 699</p>
+        <!-- quick add to cart -->
+        <a id="8" class="add-cart cart9" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 10 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage10.html">
+          <img
+            src="images/watch-images/g-shock-three.jpg"
+            alt="GMA-S140-4ADR"
+            class="img-thumbnail rounded-circle"
+          />
+        </a>
+        <h2>Casio G-Shock</h2>
+        <h5>GMA-S140-4ADR</h5>
+        <p>R 3 999</p>
+        <!-- quick add to cart -->
+        <a id="9" class="add-cart cart10" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 11 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage11.html">
+          <img
+            src="images/watch-images/vintage-rosegold.jpg"
+            alt="B640WC-5ADF"
+            class="img-thumbnail rounded-circle"
+          />
+        </a>
+        <h2>Casio Baby-G</h2>
+        <h5>B640WC-5ADF</h5>
+        <p>R 1 999</p>
+        <!-- quick add to cart -->
+        <a id="10" class="add-cart cart11" href="#">Add cart</a>
+      </article>
+    </div>
+
+    <!-- PRODUCT 12 -->
+    <div class="product-card">
+      <article class="articles">
+        <!-- product image - link to more info -->
+        <a href="3.productpage12.html">
+          <img
+            src="images/watch-images/sheen-two.jpg"
+            alt="SHE-4055PGL-7BUDF"
+            class="img-thumbnail rounded-circle"
+          />
+        </a>
+        <h2>Casio Sheen</h2>
+        <h5>SHE-4055PGL-7BUDF</h5>
+        <p>R 1 599</p>
+        <!-- quick add to cart -->
+        <a id="11" class="add-cart cart12" href="#">Add cart</a>
+      </article>
+    </div>
+    <br />
+    <br />
+    <!-- ====================================== FORM ====================================== 
+    format copied from https://getbootstrap.com/docs/4.1/components/forms/ and personalized -->
+    <form id="form-end">
+      <h2>Be the first to know about major discounts!</h2>
+      <br />
+      <!-- e-mail address input -->
+      <div class="form-group row">
+        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="Email"
+          />
+        </div>
+        <div class="col-sm-10">
+          <small id="discount-info" class="form-text text-muted"
+            >We'll never share your e-mail with anyone else.</small
+          >
+        </div>
+      </div>
+      <!-- password input -->
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label"
+          >Password</label
+        >
+        <div class="col-sm-10">
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            placeholder="Password"
+          />
+        </div>
+      </div>
+
+      <!-- CHECKBOX -->
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <fieldset class="form-group">
+            <legend class="col-form-label col-sm-2 pt-0"></legend>
+            <div class="row">
+              <div class="col-sm-10">
+                <!-- radio button 1 -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    I want to get updates on Watch Mall events too.
+                  </label>
+                </div>
+                <!-- radio button 2 -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="gridRadios2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="gridRadios2">
+                    I just want to know about discounts.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <!-- submit button -->
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary" id="submitbutton">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- ====================================== FOOTER: Get in touch ====================================== -->
+    <footer id="bottomfooter">
+      <h2>Get in touch</h2>
+      <p>
+        E-mail address:
+        <a href="mailto:info@watchmall.co.za">info@watchmall.co.za</a>
+      </p>
+      <p>Phone: 066 264 0806</p>
+      <br />
+      <p>
+        &copy; Watch Mall.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly
+        created by Shene Miller
+      </p>
+      <p>Last updated: 25 Feb 2022</p>
+    </footer>
+
+    <!-- ====================================== SCRIPT ====================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>
