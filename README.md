@@ -66,9 +66,9 @@ manageQuantity(){}
 <br/>
 <img width="1141" alt="Screenshot 2022-10-17 at 10 03 34" src="https://user-images.githubusercontent.com/99277251/196123835-04623c51-d06a-4fe5-b726-0f75256b7a36.png">
 <br/>
-#### Discount Coupon
+**Discount Coupon**
 A discount of R50 can be deducted. This is South-African currency. This can be changed in the Javascript as follows:
-*change the syymbol to the currency you want to use e.g $*
+*change the symbol to the currency you want to use*
 <img width="747" alt="Screenshot 2022-10-17 at 10 16 01" src="https://user-images.githubusercontent.com/99277251/196124891-35827e76-13c2-4dee-a5fe-d80ef0e9292c.png">
 <br/>
 This principle can also be applied to changing the product prices and delivery prices.
